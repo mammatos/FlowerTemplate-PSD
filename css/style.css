@@ -12,35 +12,84 @@
 .main-nav {
 	opacity: 0.9;
 	background-color: #ffffff;
+	z-index: 2;
 }
 .logo {
 	margin-bottom: 1em;
 	margin-top: 1em;
 }
+
 .nav-links {
 	margin-top: 1em;
+	text-align: center;
 }
 .nav-txt {
 	font-family: 'Verdana', sans-serif;
 }
-.log-icon {
+@media screen and (min-width: 768px) {
+	.nav-txt {
+		opacity: 0.9;
+	}
+}
+.hamburger {
+	margin-top: 1.4em;
+}
+.log-icon-lg {
 	padding-right: 0.4em;
 }
-.btn-log-space {
-	margin-top: 1.8em;
+.btn-log-mobile {
+	margin: 0.7em 0.5em;
+	display: inline-block;
+	float: right;
+	border: none;
+	opacity: 1;
 }
-.btn-log {
-	padding-top: 0.2em;
-	padding-bottom: 0.2em;
+@media screen and (min-width: 768px) {
+	.btn-log-mobile {
+		opacity: 0;
+	}
+}
+.btn-log-desktop {
+	margin: 1.8em 0;
+	display: none;
+}
+@media screen and (min-width: 768px) {
+	.btn-log-desktop {
+		display: block;
+	}
+}
+.btn-log-sm {
+	padding: 0.4em 0.7em;
 	background-color: #de6d6e;
 	color: #ffffff;
-	padding-right: 1em;
 	transition: all 0.5s;
 	border: none;
 }
-.btn-log:hover, .btn-log:active {
+.btn-log-sm:hover, .btn-log-sm:active {
 	background-color: #d7292b;
 	color: #ffffff;
+}
+.log-icon-sm {
+	font-size: 1.3em;
+}
+.btn-log-lg {
+	padding: 0.2em 1em;
+	background-color: #de6d6e;
+	color: #ffffff;
+	transition: all 0.5s;
+	border: none;
+	font-family: 'Verdana', sans-serif;
+
+}
+.btn-log-lg:hover, .btn-log-lg:active {
+	background-color: #d7292b;
+	color: #ffffff;
+}
+.banner-wrapper {
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 .circles-wrapper {
 	position: relative;
@@ -120,11 +169,12 @@
 	height: 12.5em;
 	border-radius: 50%;
 	position: relative;
+	margin: 1em;
 }
 .bubbles {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: center;
 	flex-wrap: wrap;
 	width: 100%;
 }
@@ -255,7 +305,7 @@
 	width: 100%;
 	text-align: center;
 }
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 768px) {
 	.mobile-nav {
 		display: none;
 	}
@@ -264,7 +314,7 @@
 	display: none;
 
 }
-@media screen and (min-width: 750px){
+@media screen and (min-width: 768px){
 	.bottom-nav {
 		display: block;
 	}
@@ -310,7 +360,7 @@
 	width: 20em;
 	display: none;
 }
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 768px) {
 	.info-wrapper {
 		display: block;
 	}
