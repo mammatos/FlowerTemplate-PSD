@@ -252,8 +252,10 @@
 }
 .mobile-nav {
 	display: block;
+	width: 100%;
+	text-align: center;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 750px) {
 	.mobile-nav {
 		display: none;
 	}
@@ -262,7 +264,7 @@
 	display: none;
 
 }
-@media screen and (min-width: 480px){
+@media screen and (min-width: 750px){
 	.bottom-nav {
 		display: block;
 	}
@@ -306,6 +308,12 @@
 }
 .info-wrapper {
 	width: 20em;
+	display: none;
+}
+@media screen and (min-width: 750px) {
+	.info-wrapper {
+		display: block;
+	}
 }
 .social-media {
 	display: flex;
