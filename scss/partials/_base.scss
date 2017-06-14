@@ -1,0 +1,24 @@
+.base {
+    width: 65vw;
+    height: 80vh;
+    background-color: $inner-bg;
+    align-self: center;
+    border-radius: 5px;
+    box-shadow: 0 0 50px #192041;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: "AllerDisplay", Arial, sans-serif;
+    position: relative;
+
+    .figure {
+        width: 0;
+        height: 0;
+        border-bottom: 40vh solid $accent;
+        border-left: 40vh solid transparent;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+}
+
